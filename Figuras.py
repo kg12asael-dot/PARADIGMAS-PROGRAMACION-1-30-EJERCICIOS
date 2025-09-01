@@ -41,3 +41,5 @@ figuras = [
 
 for figura in figuras:
     print(f"{figura.nombre}: Área = {figura.calcularArea():.2f}")
+
+

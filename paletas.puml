@@ -1,0 +1,24 @@
+@startuml Paletas
+
+class Paleta {
+    - sabor: str
+    - precio: float
+    + mostrarInformacion(): void
+}
+
+class PaletaAgua {
+    - baseAgua: bool
+    + mostrarBaseAgua(): void
+}
+
+class PaletaCrema {
+    - cremosa: bool
+    + mostrarTexturaCremosa(): void
+    + aplicarDescuento(porcentaje: float): void
+    + cambiarSabor(nuevo_sabor: str): void
+}
+
+Paleta <-- PaletaAgua
+Paleta <-- PaletaCrema
+
+@enduml
